@@ -6,6 +6,9 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="ac0e418e-ed88-4f47-9e59-05ca366bb1e2" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
 	<flow name="system-apiFlow" doc:id="afb2666c-1876-49da-aec9-69ce673caad2" >
 		<http:listener doc:name="Listener" doc:id="00a5e1a6-d517-493d-be8d-1e73070dd5b0" config-ref="HTTP_Listener_config" path="/system-api" allowedMethods="POST" outputMimeType="application/json"/>
 		<logger level="INFO" doc:name="Logger" doc:id="96721e04-d6d6-48b7-ac65-4735f5a9482c" />
