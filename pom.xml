@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>process-api</artifactId>
+	<artifactId>system-api</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
-	<name>process-api</name>
+	<name>system-api</name>
 
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,13 +30,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				<sharedLibraries>
-                        <sharedLibrary>
-                            <groupId>com.mycompany</groupId>
-                            <artifactId>postgresql-42.2.19</artifactId>
-                        </sharedLibrary>
-                    </sharedLibraries>
-                </configuration>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -60,17 +54,6 @@
             <version>1.0.0-SNAPSHOT</version>
             <classifier>mule-domain</classifier>
             <scope>provided</scope>
-        </dependency>
-    	<dependency>
-            <groupId>org.mule.connectors</groupId>
-            <artifactId>mule-db-connector</artifactId>
-            <version>1.9.1</version>
-            <classifier>mule-plugin</classifier>
-        </dependency>
-    	<dependency>
-            <groupId>com.mycompany</groupId>
-            <artifactId>postgresql-42.2.19</artifactId>
-            <version>0.1</version>
         </dependency>
     </dependencies>
 
