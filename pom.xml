@@ -10,7 +10,6 @@
 	<packaging>mule-application</packaging>
 	<name>online-test-api</name>
 	
-	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -56,14 +55,12 @@
 			<version>1.5.23</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
-		<dependency>
-			<groupId>1d4cb06e-a085-480f-940c-135e2f4024eb</groupId>
-			<artifactId>utilities</artifactId>
-			<version>1.0.1</version>
-			<systemPath>${project.basedir}/MyLibrary.jar</systemPath>
-			<scope>system</scope>
-			<classifier>mule-plugin</classifier>
-		</dependency>
+<dependency>
+     <groupId>utilities</groupId>
+     <artifactId>utilities</artifactId>
+     <version>1.0.1</version>
+</dependency>
+
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
 			<artifactId>mule-sockets-connector</artifactId>
@@ -73,6 +70,13 @@
 	</dependencies>
 
 	<repositories>
+
+    <repository>
+        <id>in-project</id>
+        <name>In Project Repo</name>
+        <url>file:${project.basedir}/libs</url>
+    </repository>
+
 		<repository>
 			<id>anypoint-exchange-v2</id>
 			<name>Anypoint Exchange</name>
