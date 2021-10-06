@@ -5,10 +5,10 @@
 	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mycompany</groupId>
-	<artifactId>system-api</artifactId>
+	<artifactId>online-test-api</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
-	<name>system-api</name>
+	<name>online-test-api</name>
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,7 +35,7 @@
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>${anypoint.userName}</username>
 						<password>${anypoint.password}</password>
-						<applicationName>system-api</applicationName>
+						<applicationName>online-test-api</applicationName>
 						<environment>Sandbox</environment>
 						<businessGroup>Core Integrations</businessGroup>
 						<workerType>MICRO</workerType>
