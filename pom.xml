@@ -59,6 +59,8 @@
 			<groupId>1d4cb06e-a085-480f-940c-135e2f4024eb</groupId>
 			<artifactId>utilities</artifactId>
 			<version>1.0.1</version>
+			<systemPath>${project.basedir}/MyLibrary.jar</systemPath>
+			<scope>system</scope>
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
